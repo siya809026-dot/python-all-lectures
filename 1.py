@@ -1,0 +1,25 @@
+import pandas as pd
+
+s = pd.Series([1,2,3,4,5,6,7],index=['k','i','y','a','s','i','n'])
+print(s)
+
+dh = pd.DataFrame({"names":["harry","rohan","subham"],"marks":[100,45,78]})
+print(dh)
+
+df = pd.read_csv("iris.csv")
+print(df)
+# print(df.head)
+# print(df.tail)
+# print(df.describe)
+# print(df.info)
+print(df.columns)
+# print(df["ID"])
+# print(type(df["sepal_length"].astype(str)))
+print(type(df.iloc[0]))
+print(df.dropna())
+print(df.fillna(0,inplace=True))
+print(df.rename(columns={"petal_length":"Praggu pookie"},inplace=True))
+df["sepal_length"]=print((df["sepal_length"].astype(str)))
+# print(df.describe)
+print(df.info)
+print(df["sepal_length"][0])
