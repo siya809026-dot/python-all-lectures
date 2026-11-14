@@ -38,8 +38,3 @@ set_b = {4, 5, 6, 7, 8}
 
 print("Union:", set_a | set_b)
 print("Intersection:", set_a & set_b)
-print("Difference:", set_a - set_b)
-print("Symmetric Difference:", set_a ^ set_b)
-
-# Checking membership
-print("Is 3 present?", 3 in set_a)
